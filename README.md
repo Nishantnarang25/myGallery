@@ -55,7 +55,7 @@ Git, GitHub, Postman, VS Code, Vercel, Netlify, Render
 
 - [LinkedIn](https://www.linkedin.com/in/nishant-6b4571246/)
 - [GitHub](https://github.com/Nishantnarang25/)
-- Email: [your-email@example.com](mailto:your-email@example.com)
+- Email: [nishantnarang111@gmail.com](mailto:nishantnarang111@gmail.com)
 
 ## Project Setup
 
