@@ -3,7 +3,7 @@
 export const uiuxProjects = [
   {
     id: 1,
-    title: "TaskManager UI/UX Case Study",
+    title: "TaskManager App",
     brief: "A Daily Task Manager app designed for efficient planning, intuitive navigation, and modern aesthetics.",
     thumbnail: "/dailyTaskManager/coverImage.png",
     duration: "2 weeks",
@@ -23,7 +23,7 @@ export const uiuxProjects = [
   },
   {
     id: 2,
-    title: "School Connect App UI/UX Case Study",
+    title: "School Connect App",
     brief: "An app connecting students, parents, and teachers, showing daily homework, attendance, and updates in an intuitive interface.",
     thumbnail: "/schoolApp/coverImage.png",
     duration: "3 weeks",
@@ -44,7 +44,7 @@ export const uiuxProjects = [
   },
   {
     id: 3,
-    title: "School Canteen Ordering App UI/UX Case Study",
+    title: "College Canteen Ordering App",
     brief: "A college canteen app designed to streamline ordering and payments, making it simple for students and staff to place and track orders.",
     thumbnail: "/canteenApp/coverImage.png",
     duration: "2 weeks",
@@ -55,7 +55,7 @@ export const uiuxProjects = [
     githubLink: "",
     caseStudyLink: "",
     wireframes: [
-      "",
+    
     ],
     mockups: []
   }

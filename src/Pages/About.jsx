@@ -98,8 +98,9 @@ const About = () => {
     className="relative text-md md:text-xl text-[#333333] leading-relaxed text-left p-8 font-sans mb-8 overflow-hidden border border-[#6B6B6B]/30 bg-[#F1F1F1] transition-all duration-300"
 >
     <p className="relative z-10">
+ <span className="hidden md:inline">
         My journey began at <span className="text-[#333333] font-bold">10 with painting</span> and sketching, evolving from <span className="underline decoration-[#805AD5]/50">paper to pixels</span>. Today, I channel that passion into <span className="font-bold text-[#805AD5] bg-clip-text">digital design and development</span>, combining creativity with code. My design approach balances <span className="italic font-medium">aesthetics and usability</span>, while development focuses on <span className="italic font-medium">performance and interactivity</span>.  
-
+    </span>
         <span className="block h-2"></span>
 
         Currently, I work as a Web Developer and Designer at <span className="font-bold text-[#805AD5]">Finbiznet</span>, building a startup website that merges innovation with user-focused design. I also recently completed a freelance UI/UX project for an <span className="italic">astrological app</span>, where I crafted intuitive interfaces and seamless user experiences.  
