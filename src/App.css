@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Root styles */
+#root {
+  background-color: #f1f1f1;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;            /* center horizontally if needed */
+  text-align: center;
+  overflow-x: hidden;        /* stop horizontal scroll */
+}
+
+/* A general container utility */
+.container {
+  max-width: 1280px;         /* adjust to your design */
+  margin: 0 auto;
+  padding: 1rem;             /* spacing from edges */
+  background: #fff;          /* optional */
+  border: 1px solid #e5e5e5; /* light border box feel */
+  border-radius: 12px;       /* rounded corners */
+}
+body {
+  font-family: 'Inter', sans-serif; /* Body text */
+}
+
+h1, h2, h3 {
+  font-family: 'Manrope', sans-serif; /* Headings */
+}
+/* Hide default cursor everywhere */
+html, body, a, button, [data-hoverable] {
+  cursor: none !important;
+}
+
+/* Optional: Add smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
