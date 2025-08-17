@@ -117,20 +117,25 @@ const Home = () => {
                     {/* Resume Buttons */}
                     <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6">
                         <motion.a
-                            href="/ui-ux"
-                            className="relative px-6 py-3 font-bold rounded-lg overflow-hidden group transition-all duration-300 text-sm sm:text-base"
-                            style={{ color: '#333333', backgroundColor: 'white', border: '2px solid #333333' }}
-                            whileHover={{ scale: 1.05, boxShadow: "0 5px 20px rgba(0,0,0,0.15)" }}
-                            whileTap={{ scale: 0.98 }}
-                        >
-                            <span className="absolute inset-0 bg-gradient-to-r from-[#FFC107] to-[#FF6F3C] transition-all duration-300 origin-left transform scale-x-0 group-hover:scale-x-100"></span>
-                            <span className="relative font-extrabold px-4 z-10 flex items-center justify-center gap-2 group-hover:text-white">
-                                Download UI/UX Resume
-                            </span>
-                        </motion.a>
+    href="/UIUX_Resume.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="relative px-6 py-3 font-bold rounded-lg overflow-hidden group transition-all duration-300 text-sm sm:text-base"
+    style={{ color: '#333333', backgroundColor: 'white', border: '2px solid #333333' }}
+    whileHover={{ scale: 1.05, boxShadow: "0 5px 20px rgba(0,0,0,0.15)" }}
+    whileTap={{ scale: 0.98 }}
+>
+    <span className="absolute inset-0 bg-gradient-to-r from-[#FFC107] to-[#FF6F3C] transition-all duration-300 origin-left transform scale-x-0 group-hover:scale-x-100"></span>
+    <span className="relative font-extrabold px-4 z-10 flex items-center justify-center gap-2 group-hover:text-white">
+        View UI/UX Resume
+    </span>
+</motion.a>
+
 
                         <motion.a
-                            href="/web-dev"
+                            href="/WebDev_Resume.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="relative px-6 py-3 font-bold rounded-lg overflow-hidden group transition-all duration-300 text-sm sm:text-base"
                             style={{ color: '#333333', backgroundColor: 'white', border: '2px solid #333333' }}
                             whileHover={{ scale: 1.05, boxShadow: "0 5px 20px rgba(0,0,0,0.15)" }}
@@ -138,9 +143,13 @@ const Home = () => {
                         >
                             <span className="absolute inset-0 bg-gradient-to-r from-[#8A2BE2] to-[#4B0082] transition-all duration-300 origin-left transform scale-x-0 group-hover:scale-x-100"></span>
                             <span className="relative z-10 flex items-center justify-center gap-2 group-hover:text-white">
-                                Download Web Dev Resume
+                                View Web Dev Resume
                             </span>
                         </motion.a>
+
+
+
+
                     </div>
 
                     {/* Social Links */}
