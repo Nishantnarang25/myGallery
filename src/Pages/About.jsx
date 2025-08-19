@@ -54,9 +54,9 @@ const About = () => {
         {
             title: "Web Developer & Designer",
             company: "FinBizNet",
-            duration: "Aug 2024 – Present",
+            duration: "Aug 2025 – Present",
             description: "Designing and developing responsive web applications with modern frameworks while maintaining brand consistency across digital products.",
-            skills: ["React", "TailwindCSS", "MongoDB", "Node.js", "Express"]
+            skills: ["React", "Python (Flask)",  "TailwindCSS", "Smart API", "MongoDB", "Node.js", "Express"]
         },
         {
             title: "UI/UX Designer & Social Media Manager",

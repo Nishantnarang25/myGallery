@@ -8,6 +8,76 @@ import SkillsCard from '../components/SkillsCard';
 import { recentCertificates } from '../data/recentCertificates';
 import CertificateCard from '../components/Certificates';
 import "../App.css";
+import { Briefcase, Calendar, Building2 } from 'lucide-react';
+
+const experienceData = [
+    {
+        title: "Web Designer & Developer Intern",
+        company: "FinBizNet",
+        duration: "July 2025 – Present",
+        description: [
+            "Revamped company website, improving UI/UX, responsiveness, and visual hierarchy using Figma and React.",
+            "Designed interactive dashboards with data visualizations (bar graphs, tables) for user analytics.",
+            "Collaborated with developers to enhance frontend functionality and design systems."
+        ],
+skills: [
+  "Figma",               // UI/UX first
+  "React",               // Frontend framework
+  "JavaScript",          // Frontend language
+  "TailwindCSS",         // Styling / frontend
+  "Python (Flask)",      // Backend
+  "Node.js",             // Backend
+  "Express",             // Backend framework
+  "MongoDB",             // Database
+  "Cloudinary",          // Media storage / assets
+  "AWS",                 // Cloud / deployment
+  "Render",              // Deployment platform
+  "Vercel"               // Deployment platform
+]
+    },
+    {
+        title: "UI/UX Designer (Freelance)",
+        company: "Astrology App",
+        duration: "July 2025 – Aug 2025",
+        description: [
+            "Designed and developed a comprehensive astrology app with features including horoscope predictions, family tree visualization, gotra tracking, and temple seva bookings.",
+            "Delivered project 100% on time despite evolving client requirements."
+        ],
+        skills: ["Figma",
+            "Wireframing & Mockups",
+            "Prototyping",
+            "Auto-Layout & Responsive Design",
+            "User Flows & Task Flows",
+            "Interaction Design",
+            "Usability Testing & User Research",
+            "Personas & User Journey Mapping",
+            "Design Systems & Component Libraries",
+            "Visual Hierarchy & Typography",
+            "Color Theory & Accessibility"]
+    },
+    {
+        title: "Social Media & Design Intern",
+        company: "OSS Consulting",
+        duration: "July 2024 – Aug 2024",
+        description: [
+            "Designed cohesive Instagram posts and reel templates, strengthening brand identity and recognition.",
+            "Applied design principles (typography, color theory, motion) to create high-impact visuals that boosted engagement and shareability."
+        ],
+        skills: ["Figma", "Canva", "Social Media Design", "Branding", "Content Strategy"]
+    },
+    {
+        title: "UI/UX & Social Media Designer",
+        company: "NotClg",
+        duration: "Sep 2023 – Jul 2024",
+        description: [
+            "Created the official college logo and established a consistent visual identity across platforms.",
+            "Designed Instagram posts, posters, and event graphics that increased participation by 25%.",
+            "Contributed to end-to-end app UI/UX design, supporting prototyping and user flow improvements."
+        ],
+        skills: ["Figma", "Canva", "Logo Design", "Social Media Strategy"]
+    }
+];
+
 
 const Home = () => {
     const [isExploding, setIsExploding] = useState(false);
@@ -117,19 +187,19 @@ const Home = () => {
                     {/* Resume Buttons */}
                     <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6">
                         <motion.a
-    href="/UIUX_Resume.pdf"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="relative px-6 py-3 font-bold rounded-lg overflow-hidden group transition-all duration-300 text-sm sm:text-base"
-    style={{ color: '#333333', backgroundColor: 'white', border: '2px solid #333333' }}
-    whileHover={{ scale: 1.05, boxShadow: "0 5px 20px rgba(0,0,0,0.15)" }}
-    whileTap={{ scale: 0.98 }}
->
-    <span className="absolute inset-0 bg-gradient-to-r from-[#FFC107] to-[#FF6F3C] transition-all duration-300 origin-left transform scale-x-0 group-hover:scale-x-100"></span>
-    <span className="relative font-extrabold px-4 z-10 flex items-center justify-center gap-2 group-hover:text-white">
-        View UI/UX Resume
-    </span>
-</motion.a>
+                            href="/UIUX_Resume.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="relative px-6 py-3 font-bold rounded-lg overflow-hidden group transition-all duration-300 text-sm sm:text-base"
+                            style={{ color: '#333333', backgroundColor: 'white', border: '2px solid #333333' }}
+                            whileHover={{ scale: 1.05, boxShadow: "0 5px 20px rgba(0,0,0,0.15)" }}
+                            whileTap={{ scale: 0.98 }}
+                        >
+                            <span className="absolute inset-0 bg-gradient-to-r from-[#FFC107] to-[#FF6F3C] transition-all duration-300 origin-left transform scale-x-0 group-hover:scale-x-100"></span>
+                            <span className="relative font-extrabold px-4 z-10 flex items-center justify-center gap-2 group-hover:text-white">
+                                View UI/UX Resume
+                            </span>
+                        </motion.a>
 
 
                         <motion.a
@@ -238,8 +308,80 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* Experience */}
+            <motion.section
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.8 }}
+                className="bg-white/50 p-8 transition-all duration-300"
+            >
+                <div className="flex items-center gap-3 mb-8">
+                    <div className="bg-[#805AD5] p-2 rounded-lg">
+                        <Briefcase className="w-4 h-4 text-white" /> {/* Lucide-react icon */}
+                    </div>
+                    <h2 className="text-2xl font-bold text-[#333333]">Professional Journey</h2>
+                </div>
+
+                <div className="space-y-8 relative">
+                    {/* Timeline line */}
+                    <div className="absolute left-5 top-0 h-full w-0.5 bg-[#805AD5]/10"></div>
+
+                    {experienceData.map((exp, index) => (
+                        <motion.div
+                            key={index}
+                            initial={{ x: -20, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6, delay: index * 0.1 }}
+                            className="relative pl-12 group"
+                        >
+                            {/* Timeline dot */}
+                            <div className="absolute left-0 top-1 w-4 h-4 rounded-full border-4 border-white bg-[#805AD5]  group-hover:scale-125 transition-transform"></div>
+
+                            <div className="bg-[#fafafa] p-6 rounded-sm border border-[#f0f0f0] group-hover:border-[#805AD5]/30 transition-all duration-300">
+                                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
+                                    <h3 className="text-xl font-bold text-[#333] text-left">{exp.title}</h3>
+                                    <div className="flex items-center gap-2">
+                                        <Calendar className="w-4 h-4 text-[#805AD5]" />
+                                        <span className="text-sm font-medium text-[#555] text-right">{exp.duration}</span>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-center gap-2 mb-4">
+                                    <Building2 className="w-4 h-4 text-[#555]" />
+                                    <span className="text-[#555] font-medium text-left">{exp.company}</span>
+                                </div>
+
+<ul className="text-[#555] text-left leading-relaxed mb-4 list-disc list-inside">
+  {exp.description.map((point, index) => (
+    <li key={index}>{point}</li>
+  ))}
+</ul>
+
+                                {exp.skills && (
+                                    <div className="flex flex-wrap gap-2 pt-2">
+                                        {exp.skills.map((skill, i) => (
+                                            <motion.span
+                                                key={i}
+                                                whileHover={{ y: -2 }}
+                                                className="px-3 py-1 bg-[#f5f5f5] rounded-full text-sm text-[#555]"
+                                            >
+                                                {skill}
+                                            </motion.span>
+                                        ))}
+                                    </div>
+                                )}
+                            </div>
+                        </motion.div>
+                    ))}
+                </div>
+            </motion.section>
+
             {/* Skills */}
             <SkillsCard />
+
+
 
             {/* Certificates */}
             <section className="py-8">
