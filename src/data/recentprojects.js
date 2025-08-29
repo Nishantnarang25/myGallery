@@ -21,8 +21,18 @@ export const recentProjects = [
     githubLink: "",
     liveLink: "https://finbiznet.com/"
   },
-  {
+   {
     id: 3,
+    title: "Project Cosmos",
+    description: "Designing a Modern Astronomy App from the Ground Up",
+    category: "uiux",
+    thumbnail: "/latestProjectsImages/astro-thumb.png",
+    slug: "astro-uiux",
+    caseStudyLink: "https://medium.com/@nishantnarang111/project-cosmos-designing-a-modern-astronomy-app-from-the-ground-up-7377a143d750",
+    PrototypeLink: ""
+  },
+  {
+    id: 4,
     title: "TaskManager UI/UX Case Study",
     description: "Minimal task app with modern productivity design.",
     category: "uiux",
@@ -31,14 +41,15 @@ export const recentProjects = [
     caseStudyLink: "https://medium.com/@nishantnarang111/redefining-daily-task-management-a-user-centric-approach-d1ffa044760e",
     PrototypeLink: "https://www.figma.com/proto/rZMvRwEth173hhrZJP4v2S/Daily-Planner-App-Case-Study-new?node-id=183-68&p=f&t=mxXBhSkpRY4aCtxc-0&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=183%3A560&show-proto-sidebar=1"
   },
-  {
-    id: 4,
-    title: "StreamLine",
-    description: "Real-time messaging with seamless peer communication.",
-    category: "web-dev",
-    thumbnail: "/latestProjectsImages/streamline-thumb.JPG",
-    slug: "streamline-chat",
-    githubLink: "https://github.com/Nishantnarang25/streamLine",
-    liveLink: ""
-  }
+  // {
+  //   id: 4,
+  //   title: "StreamLine",
+  //   description: "Real-time messaging with seamless peer communication.",
+  //   category: "web-dev",
+  //   thumbnail: "/latestProjectsImages/streamline-thumb.JPG",
+  //   slug: "streamline-chat",
+  //   githubLink: "https://github.com/Nishantnarang25/streamLine",
+  //   liveLink: ""
+  // },
+  
 ];

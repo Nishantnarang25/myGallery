@@ -20,20 +20,20 @@ const experienceData = [
             "Designed interactive dashboards with data visualizations (bar graphs, tables) for user analytics.",
             "Collaborated with developers to enhance frontend functionality and design systems."
         ],
-skills: [
-  "Figma",               // UI/UX first
-  "React",               // Frontend framework
-  "JavaScript",          // Frontend language
-  "TailwindCSS",         // Styling / frontend
-  "Python (Flask)",      // Backend
-  "Node.js",             // Backend
-  "Express",             // Backend framework
-  "MongoDB",             // Database
-  "Cloudinary",          // Media storage / assets
-  "AWS",                 // Cloud / deployment
-  "Render",              // Deployment platform
-  "Vercel"               // Deployment platform
-]
+        skills: [
+            "Figma",               // UI/UX first
+            "React",               // Frontend framework
+            "JavaScript",          // Frontend language
+            "TailwindCSS",         // Styling / frontend
+            "Python (Flask)",      // Backend
+            "Node.js",             // Backend
+            "Express",             // Backend framework
+            "MongoDB",             // Database
+            "Cloudinary",          // Media storage / assets
+            "AWS",                 // Cloud / deployment
+            "Render",              // Deployment platform
+            "Vercel"               // Deployment platform
+        ]
     },
     {
         title: "UI/UX Designer (Freelance)",
@@ -353,11 +353,11 @@ const Home = () => {
                                     <span className="text-[#555] font-medium text-left">{exp.company}</span>
                                 </div>
 
-<ul className="text-[#555] text-left leading-relaxed mb-4 list-disc list-inside">
-  {exp.description.map((point, index) => (
-    <li key={index}>{point}</li>
-  ))}
-</ul>
+                                <ul className="text-[#555] text-left leading-relaxed mb-4 list-disc list-inside">
+                                    {exp.description.map((point, index) => (
+                                        <li key={index}>{point}</li>
+                                    ))}
+                                </ul>
 
                                 {exp.skills && (
                                     <div className="flex flex-wrap gap-2 pt-2">
