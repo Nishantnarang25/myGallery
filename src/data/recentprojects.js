@@ -26,7 +26,7 @@ export const recentProjects = [
     title: "Project Cosmos",
     description: "Designing a Modern Astronomy App from the Ground Up",
     category: "uiux",
-    thumbnail: "/latestProjectsImages/astro-thumb.png",
+    thumbnail: "/astroApp/coverimage1.png",
     slug: "astro-uiux",
     caseStudyLink: "https://medium.com/@nishantnarang111/project-cosmos-designing-a-modern-astronomy-app-from-the-ground-up-7377a143d750",
     PrototypeLink: ""
