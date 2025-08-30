@@ -79,33 +79,42 @@ const UIUX = () => {
               onMouseLeave={() => setHoveredProject(null)}
             >
               {/* Design elements that appear on hover */}
-              {hoveredProject === project.id && (
-                <>
-                  <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                    {/* Floating design elements */}
-                    {[...Array(8)].map((_, i) => (
-                      <motion.div
-                        key={i}
-                        className="absolute border-2 border-[#805AD5]/20 rounded-full pointer-events-none"
-                        style={{
-                          width: `${Math.random() * 100 + 50}px`,
-                          height: `${Math.random() * 100 + 50}px`,
-                          left: `${Math.random() * 80 + 10}%`,
-                          top: `${Math.random() * 80 + 10}%`,
-                        }}
-                        initial={{ scale: 0, opacity: 0 }}
-                        animate={{ scale: 1, opacity: 0.3 }}
-                        exit={{ scale: 0, opacity: 0 }}
-                        transition={{
-                          delay: i * 0.1,
-                          duration: 0.8,
-                          type: 'spring'
-                        }}
-                      />
-                    ))}
-                  </div>
-                </>
-              )}
+             {hoveredProject === project.id && (
+  <div className="absolute inset-0 overflow-hidden pointer-events-none">
+    {project.tools.map((tool, index) => {
+      const size = Math.random() * 40 + 20;
+      const left = Math.random() * 80 + 10;
+      const top = Math.random() * 80 + 10;
+      const delay = Math.random() * 0.5;
+      const duration = Math.random() * 3 + 2;
+
+      return (
+        <motion.div
+          key={`bubble-${index}`}
+          className="absolute rounded-full opacity-10 bg-[#805AD5]"
+          style={{
+            width: `${size}px`,
+            height: `${size}px`,
+            left: `${left}%`,
+            top: `${top}%`,
+          }}
+          initial={{ scale: 0, opacity: 0 }}
+          animate={{ scale: 1, opacity: 0.1 }}
+          exit={{ scale: 0, opacity: 0 }}
+          transition={{
+            delay,
+            duration,
+            type: "spring",
+            damping: 5
+          }}
+        />
+      );
+    })}
+  </div>
+)}
+
+
+
 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 relative z-10 bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow duration-300">
   {/* Image Column */}
   <motion.div

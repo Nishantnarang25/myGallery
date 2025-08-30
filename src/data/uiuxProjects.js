@@ -5,7 +5,7 @@ export const uiuxProjects = [
     id: 0,
     title: "Project Cosmos",
     brief: "An astrology app with mantras, horoscopes, jyotish booking, temple services, and e-commerce and so much more!",
-    thumbnail: "/astroApp/coverimage.png",
+    thumbnail: "/astroApp/coverimage1.png",
     duration: "1.5 weeks",
     team: "Client Project",
     tools: ["Figma"],
@@ -35,7 +35,11 @@ brief: "A couture design project celebrating handmade artistry, individuality, a
     githubLink: "",
     caseStudyLink: "",
     wireframes: [
-      "/gouture/website.png",
+      "/gouture/mockup1.png",
+      "/gouture/mockup2.png",
+      "/gouture/mockup3.png",
+      "/gouture/mockup4.png",
+      "/gouture/mockup5.png",
 
     ],
     mockups: []
